@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roomies — JuJu Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-lightmode.png" />
+  <link rel="apple-touch-icon" href="assets/logo-lightmode.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo-lightmode.svg" alt="JuJu Kim" class="nav-logo-img" />
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-track"><span class="toggle-thumb"><svg class="toggle-sun" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="toggle-moon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></span>
+      </button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#works" class="mobile-link">Works</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" class="mobile-link">Resume ↗</a>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="project-hero">
+    <img src="0-home-project-thumbnails/roomies-thumbnail.png" alt="Roomies" />
+  </div>
+
+  <article class="project-article">
+
+    <h1>Roomies</h1>
+    <p class="project-subtitle">A P2P app for young adults that turns daily routines into shared challenges to build accountability through human connection.</p>
+
+    <p class="project-badge">✦ &nbsp;Selected for the Summer Workstation at the Institute of Higher Education Innovation, Yonsei University</p>
+
+    <div class="meta-grid">
+      <div>
+        <p class="meta-col-label">Role</p>
+        <ul class="meta-col-value"><li>· UX/UI Design</li><li>· Character Design</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Tools</p>
+        <ul class="meta-col-value"><li>· Figma</li><li>· Adobe Illustrator</li><li>· Miro</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Timeline</p>
+        <ul class="meta-col-value"><li>· Mar – Aug 2021</li><li>· Revisited Oct 2024</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Team</p>
+        <ul class="meta-col-value"><li>· JuJu Kim</li><li>· Seojin Jung</li><li>· Sihyun Lee</li><li>· My Dung Pham</li><li>· Misug Cho</li></ul>
+      </div>
+    </div>
+
+    <blockquote class="project-quote">
+      "I feel more motivated when the one keeping me accountable is a real person. I often ignore app notifications, and machines become boring over time."
+      <cite>— P2</cite>
+    </blockquote>
+
+    <!-- Section 1 -->
+    <div class="project-section">
+      <h2>The challenge</h2>
+      <h3>86% of young adults had their daily routines disrupted, and the assumed fix was a better tool to manage them.</h3>
+      <p>Sleep, meals, exercise, and social interaction were all off track. <span class="text-highlight">The instinct was to design a smarter tool: something that could track habits, send timely reminders, and fill the gaps through the devices people already used.</span> We were trying to fix the problem directly.</p>
+
+      <!-- Survey visualization -->
+      <div style="display:flex; gap:36px; align-items:center; margin-top:28px; flex-wrap:wrap;">
+        <div style="flex-shrink:0; position:relative; width:160px; height:160px;">
+          <svg viewBox="0 0 180 180" width="160" height="160" style="transform:rotate(-90deg); color:var(--text); display:block;">
+            <!-- background ring -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="currentColor" stroke-width="26" opacity="0.07"/>
+            <!-- 2%: almost same -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="currentColor" stroke-width="26" opacity="0.15"
+              style="stroke-dasharray:8.80 431.02; stroke-dashoffset:118.76; stroke-linecap:butt;"/>
+            <!-- 12%: neutral -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="currentColor" stroke-width="26" opacity="0.25"
+              style="stroke-dasharray:52.78 387.04; stroke-dashoffset:171.54; stroke-linecap:butt;"/>
+            <!-- 42%: changed somewhat -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="currentColor" stroke-width="26" opacity="0.5"
+              style="stroke-dasharray:184.72 255.10; stroke-dashoffset:356.26; stroke-linecap:butt;"/>
+            <!-- 44%: changed a lot -->
+            <circle cx="90" cy="90" r="70" fill="none" stroke="currentColor" stroke-width="26" opacity="1"
+              style="stroke-dasharray:193.52 246.30; stroke-dashoffset:109.96; stroke-linecap:butt;"/>
+          </svg>
+          <div style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); text-align:center; pointer-events:none;">
+            <div style="font-size:26px; font-weight:700; line-height:1; color:var(--text);">86%</div>
+            <div style="font-size:11px; color:var(--text-muted); margin-top:3px; line-height:1.3;">off track</div>
+          </div>
+        </div>
+        <div style="flex:1; min-width:190px;">
+          <p style="font-size:12.5px; color:var(--text-muted); margin:0 0 14px 0; font-style:italic; line-height:1.4;">"How much has your daily routine changed since COVID-19?" — 65 young adults surveyed</p>
+          <div style="display:flex; flex-direction:column; gap:9px;">
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:11px; height:11px; border-radius:50%; background:var(--text); opacity:1; flex-shrink:0;"></span>
+              <span style="font-size:13px; color:var(--text); flex:1;">Changed a lot</span>
+              <span style="font-size:13px; font-weight:500; color:var(--text);">44%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:11px; height:11px; border-radius:50%; background:var(--text); opacity:0.5; flex-shrink:0;"></span>
+              <span style="font-size:13px; color:var(--text); flex:1;">Changed somewhat</span>
+              <span style="font-size:13px; font-weight:500; color:var(--text);">42%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:11px; height:11px; border-radius:50%; background:var(--text); opacity:0.25; flex-shrink:0;"></span>
+              <span style="font-size:13px; color:var(--text-muted); flex:1;">Neutral</span>
+              <span style="font-size:13px; color:var(--text-muted);">12%</span>
+            </div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <span style="width:11px; height:11px; border-radius:50%; background:var(--text); opacity:0.15; flex-shrink:0;"></span>
+              <span style="font-size:13px; color:var(--text-muted); flex:1;">Almost the same</span>
+              <span style="font-size:13px; color:var(--text-muted);">2%</span>
+            </div>
+          </div>
+          <p style="font-size:11.5px; color:var(--text-muted); margin:14px 0 0 0; line-height:1.5;">Also reported: significant changes in <strong style="color:var(--text); font-weight:500;">stress levels, screen time, and sleep duration.</strong></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Section 2 -->
+    <div class="project-section">
+      <div style="background:var(--text); color:var(--bg); border-radius:12px; padding:32px 36px;">
+        <h2 style="color:var(--bg); opacity:0.5; margin-bottom:12px;">The Insight</h2>
+        <h3 style="color:var(--bg); margin-bottom:16px;">Interviews revealed the problem was not a lack of tools. What they were missing was a real person on the other side.</h3>
+        <p style="color:var(--bg); opacity:0.8; margin:0;">Automation was already everywhere, and people were still struggling. Notifications get ignored. Machines feel impersonal over time. <mark style="background:rgba(255,255,255,0.18); color:var(--bg); border-radius:3px; padding:1px 3px;">What actually moves people is knowing that a real person is on the other side, waiting for them to show up.</mark></p>
+      </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="project-section">
+      <h2>The Idea</h2>
+      <h3>Roomies pairs strangers based on shared habits, building accountability through a real person rather than an automated reminder.</h3>
+      <p><span class="text-highlight">Each user has their own virtual room.</span> When a challenge begins, the two rooms connect. Users set a task together, check each other's progress, and submit proof when it is done. The accountability is built into the structure, not pushed through notifications.</p>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="project-section">
+      <h2>Visual Language</h2>
+      <h3>The visual identity needed to feel playful without making the product feel trivial.</h3>
+      <p>The visual language was intentionally playful, with isometric rooms, characters inspired by garden gnomes and ghosts, and a bold color palette. The goal was to make a routine feel like something worth showing up for, not a checklist to get through.</p>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="project-section">
+      <h2>Testing</h2>
+      <h3>All 10 users connected with the core concept immediately, with no major usability friction.</h3>
+      <p>10 participants tested the prototype. No major usability issues were found, but more importantly, the idea resonated immediately.</p>
+
+      <blockquote class="project-quote">
+        "Having other people look after me would motivate me a lot. That is the main reason for my unproductivity, not having a supervisor."
+        <cite>— P3</cite>
+      </blockquote>
+    </div>
+
+    <!-- Scroll carousel: Reflections -->
+    <div class="scroll-cards-outer">
+      <div class="scroll-cards-sticky">
+        <div class="scroll-cards-inner">
+          <p class="scroll-cards-section-label">Reflections</p>
+          <div class="scroll-card active" data-index="0">
+            <p class="scroll-card-label">Challenges</p>
+            <ol>
+              <li><span>Designing a system that creates genuine accountability between <span class="text-highlight">strangers who have never met</span></span></li>
+              <li><span>Making the digital space feel personal enough to motivate someone on a hard day</span></li>
+              <li><span>Keeping the visual identity <span class="text-highlight">playful without making the product feel unserious</span></span></li>
+            </ol>
+          </div>
+          <div class="scroll-card" data-index="1">
+            <p class="scroll-card-label">Accomplishments</p>
+            <ol>
+              <li><span>A concept that resonated deeply enough to <span class="text-highlight">survive user testing without major usability issues</span></span></li>
+              <li><span>Selected for a national research program with mentorship and funding</span></li>
+              <li><span>Proved that social accountability works <span class="text-highlight">across cultural and timezone differences</span></span></li>
+            </ol>
+          </div>
+          <div class="scroll-card" data-index="2">
+            <p class="scroll-card-label">Learnings</p>
+            <ol>
+              <li><span><span class="text-highlight">Accountability needs a face on the other side to feel real.</span> A system cannot replicate that</span></li>
+              <li><span>Playfulness and structure are not opposites. One makes the other worth using</span></li>
+            </ol>
+          </div>
+          <div class="scroll-card-dots">
+            <span class="scroll-dot active"></span>
+            <span class="scroll-dot"></span>
+            <span class="scroll-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="project-section">
+      <h2>Beyond the Pandemic</h2>
+      <h3>Roomies was built during lockdown, but the insight behind it has nothing to do with it.</h3>
+      <p>Roomies was conceived during the pandemic, but the insight it is built on has nothing to do with lockdowns. <span class="text-highlight">People have always needed other people to stay on track.</span> That is not a pandemic problem. That is just how motivation works.</p>
+    </div>
+
+    <p class="project-closing-quote">"Turns out the best motivation is just someone who notices when you don't show up."</p>
+
+  </article>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+    <p class="project-nav-heading">See Also</p>
+    <div class="project-nav-links">
+      <a class="card" href="we-rule-the-world.html">
+        <div class="card-thumb">
+          <img src="0-home-project-thumbnails/wrtw-thumbnail.png" alt="We Rule the World!" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">We rule the world!</h3>
+          <p class="card-meta">Aug – Dec 2023 · Solo</p>
+          <p class="card-desc">A gamified platform for young donors that makes donating fun and accessible to help underfunded animal shelters in South Korea.</p>
+          <div class="card-tags">
+            <span class="tag">UX/UI Design</span>
+            <span class="tag">Interactive Exhibition</span>
+          </div>
+        </div>
+      </a>
+      <a class="card" href="memory-pot.html">
+        <div class="card-thumb">
+          <img src="0-home-project-thumbnails/memory-pot-thumbnail.JPG" alt="Memory Pot" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Memory pot</h3>
+          <p class="card-meta">Sep – Dec 2025 · Solo</p>
+          <p class="card-desc">A responsive memorial object for people dealing with pet grief that helps them process different emotions changing over time.</p>
+          <div class="card-tags">
+            <span class="tag">Physical Computing</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Arduino</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html#works">Works</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+    <span>© 2026 JuJu Kim. All Rights Reserved.</span>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <img src="assets/icon-up-arrow.svg" class="svg-icon" alt="↑" />
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

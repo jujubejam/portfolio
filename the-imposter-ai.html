@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Imposter AI — JuJu Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-lightmode.png" />
+  <link rel="apple-touch-icon" href="assets/logo-lightmode.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo-lightmode.svg" alt="JuJu Kim" class="nav-logo-img" />
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-track"><span class="toggle-thumb"><svg class="toggle-sun" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="toggle-moon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></span>
+      </button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#works" class="mobile-link">Works</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" class="mobile-link">Resume ↗</a>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="project-hero">
+    <img src="0-home-project-thumbnails/imposter-thumbnail.JPEG" alt="The Imposter AI" />
+  </div>
+
+  <article class="project-article">
+
+    <h1>The Imposter AI</h1>
+    <p class="project-subtitle">An AI-powered tabletop game system where the AI sits at the table as a full player, complete with a physical presence, a voice, and the ability to bluff.</p>
+
+    <p class="project-badge">✦ &nbsp;Built at <a href="https://hardmode.media.mit.edu/" target="_blank" rel="noopener">MIT Hardmode Hackathon ↗</a> &nbsp;·&nbsp; <a href="https://devpost.com/software/sober-buddy" target="_blank" rel="noopener">DevPost ↗</a></p>
+
+    <div class="meta-grid">
+      <div>
+        <p class="meta-col-label">Role</p>
+        <ul class="meta-col-value"><li>· Interaction Design</li><li>· Hardware Engineering</li><li>· 3D Modeling</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Tools</p>
+        <ul class="meta-col-value"><li>· Raspberry Pi 5</li><li>· Arduino</li><li>· Tinkercad</li><li>· Blender</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Timeline</p>
+        <p class="meta-col-value">Mar 2026</p>
+      </div>
+      <div>
+        <p class="meta-col-label">Team</p>
+        <ul class="meta-col-value"><li>· JuJu Kim</li><li>· Jeewon Kim</li><li>· Peter Kweon</li><li>· Serin Kim</li></ul>
+      </div>
+    </div>
+
+  <!-- TEAM PHOTO -->
+  <div class="project-img" style="margin-bottom: 0;">
+    <img src="1-imposter-ai/team-photo.JPEG" alt="Team photo" />
+  </div>
+
+    <!-- HMW -->
+    <div class="project-hmw">
+      <div class="project-hmw-inner">
+        <h3>Give AI a physical seat at the table and a real role in the game.</h3>
+      </div>
+    </div>
+
+    <!-- Section 1 -->
+    <div class="project-section">
+      <div class="idea-layout">
+        <div class="idea-text">
+          <p>Party games often fall apart without enough people. We saw it as an opportunity to build <span class="text-highlight">an AI-powered tabletop gaming system that makes game nights more interactive, full, and fun.</span></p>
+          <p>Imposter was the natural choice. <button class="about-toggle" data-target="imposter-game-panel">The game runs entirely on deception, bluffing, and reading the room, which gave the AI a genuinely interesting role to fill rather than a peripheral one.</button></p>
+
+          <div class="about-expand-panel" id="imposter-game-panel">
+            <div class="about-expand-inner">
+              <div class="about-expand-item">
+                <p class="about-expand-org">How it works</p>
+                <p class="about-expand-role">One player is secretly the Imposter. Each round, players answer a question or describe a word, but the Imposter does not know the topic and has to bluff. At the end of the round, players vote on who they think the Imposter is. The Imposter wins by not getting caught. Everyone else wins by finding them.</p>
+              </div>
+            </div>
+          </div>
+
+          <p>There was also something fun about the contrast. <span class="text-highlight">Most AI today is built to be honest and helpful, and we built ours to lie on purpose, in context, and with wit.</span></p>
+        </div>
+        <div class="idea-video">
+          <div class="idea-video-player"><iframe src="https://player.vimeo.com/video/1182844413?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="MIT HARDMODE - Imposter AI Demo"></iframe></div>
+          <p class="project-video-caption">See it in action!</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="project-system-label">The Build</p>
+
+    <div class="project-img" style="margin-bottom: 0;">
+      <img src="1-imposter-ai/product-overview.jpeg" alt="Product overview" />
+    </div>
+
+    <!-- The System group -->
+    <div class="project-system-group">
+
+      <div class="project-section project-system-item">
+        <h2>01 &nbsp; Hardware</h2>
+        <h3>One hub, four coasters, all connected wirelessly.</h3>
+        <p><span class="text-highlight">The main hardware is a lotus flower shaped hub containing an LCD screen, camera, microphone, and speaker.</span> These act as the communication interface between the AI and the players at the table. The hub runs on a Raspberry Pi, which handles communication with the AI backend and coordinates the overall game state.</p>
+
+        <!-- Hardware diagram -->
+        <div class="hw-diagram-wrap">
+          <svg class="hw-diagram" viewBox="0 0 600 440" xmlns="http://www.w3.org/2000/svg" aria-label="System diagram: hub connected to player coasters">
+            <defs>
+              <path id="path-p1" d="M300,74 L100,209"/>
+              <path id="path-ai" d="M300,74 L500,209"/>
+              <path id="path-p2" d="M300,74 L210,349"/>
+              <path id="path-p3" d="M300,74 L390,349"/>
+            </defs>
+
+            <!-- Hub broadcast pulse -->
+            <circle cx="300" cy="74" r="55" fill="none" stroke="currentColor" stroke-width="1" opacity="0">
+              <animate attributeName="r" from="55" to="110" dur="2.4s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" from="0.25" to="0" dur="2.4s" repeatCount="indefinite"/>
+            </circle>
+
+            <!-- Static connection lines -->
+            <use href="#path-p1" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5" opacity="0.18"/>
+            <use href="#path-ai" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5" opacity="0.18"/>
+            <use href="#path-p2" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5" opacity="0.18"/>
+            <use href="#path-p3" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5 5" opacity="0.18"/>
+
+            <!-- Packets travel hub → coaster → hub in sequence: P1 → P2 → P3 → AI -->
+            <!-- Round trip: 1.5s out + 1.5s back. Gap: 0.75s. Cycle: 15s -->
+            <circle r="3.5" class="hw-packet" opacity="0">
+              <animateMotion dur="15s" repeatCount="indefinite" begin="0s" calcMode="linear" keyTimes="0;0.1;0.2;1" keyPoints="0;1;0;0"><mpath href="#path-p1"/></animateMotion>
+              <animate attributeName="opacity" dur="15s" repeatCount="indefinite" begin="0s" calcMode="discrete" keyTimes="0;0.2;1" values="1;0;0"/>
+            </circle>
+            <circle r="3.5" class="hw-packet" opacity="0">
+              <animateMotion dur="15s" repeatCount="indefinite" begin="3.75s" calcMode="linear" keyTimes="0;0.1;0.2;1" keyPoints="0;1;0;0"><mpath href="#path-p2"/></animateMotion>
+              <animate attributeName="opacity" dur="15s" repeatCount="indefinite" begin="3.75s" calcMode="discrete" keyTimes="0;0.2;1" values="1;0;0"/>
+            </circle>
+            <circle r="3.5" class="hw-packet" opacity="0">
+              <animateMotion dur="15s" repeatCount="indefinite" begin="7.5s" calcMode="linear" keyTimes="0;0.1;0.2;1" keyPoints="0;1;0;0"><mpath href="#path-p3"/></animateMotion>
+              <animate attributeName="opacity" dur="15s" repeatCount="indefinite" begin="7.5s" calcMode="discrete" keyTimes="0;0.2;1" values="1;0;0"/>
+            </circle>
+            <circle r="3.5" class="hw-packet" opacity="0">
+              <animateMotion dur="15s" repeatCount="indefinite" begin="11.25s" calcMode="linear" keyTimes="0;0.1;0.2;1" keyPoints="0;1;0;0"><mpath href="#path-ai"/></animateMotion>
+              <animate attributeName="opacity" dur="15s" repeatCount="indefinite" begin="11.25s" calcMode="discrete" keyTimes="0;0.2;1" values="1;0;0"/>
+            </circle>
+
+            <!-- Hub -->
+            <image class="hw-icon" href="1-imposter-ai/hub.svg" x="215" y="12" width="170" height="125"/>
+
+            <!-- Player coasters -->
+            <image class="hw-icon" href="1-imposter-ai/coaster-player.svg" x="55"  y="165" width="90" height="89"/>
+            <image class="hw-icon" href="1-imposter-ai/coaster-ai.svg"     x="455" y="165" width="90" height="89"/>
+            <image class="hw-icon" href="1-imposter-ai/coaster-player.svg" x="165" y="305" width="90" height="89"/>
+            <image class="hw-icon" href="1-imposter-ai/coaster-player.svg" x="345" y="305" width="90" height="89"/>
+
+            <!-- Labels -->
+            <text x="300" y="153" text-anchor="middle" class="hw-label">Hub</text>
+            <text x="100"  y="270" text-anchor="middle" class="hw-label">Coaster</text>
+            <text x="100"  y="283" text-anchor="middle" class="hw-label">(Player 1)</text>
+            <text x="500"  y="270" text-anchor="middle" class="hw-label">AI Player</text>
+            <text x="210"  y="410" text-anchor="middle" class="hw-label">Coaster</text>
+            <text x="210"  y="423" text-anchor="middle" class="hw-label">(Player 2)</text>
+            <text x="390"  y="410" text-anchor="middle" class="hw-label">Coaster</text>
+            <text x="390"  y="423" text-anchor="middle" class="hw-label">(Player 3)</text>
+          </svg>
+        </div>
+
+        <p><span class="text-highlight">Each leaf-shaped coaster is powered by an Arduino, which receives signals from the hub and drives the LEDs.</span> The lights track whose turn it is, who is voting, and what the outcome is. <span class="text-highlight">The hub is the brain. The coasters are the nervous system.</span></p>
+
+        <div class="project-video-wrap">
+          <div class="project-video-embed"><iframe src="https://player.vimeo.com/video/1183038565?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="MIT HARDMODE - Imposter AI LED Demo"></iframe></div>
+          <p class="project-video-caption">LED signals on the coasters, driven by Arduino.</p>
+        </div>
+
+        <p style="margin-top:32px;">I was in charge of the hub hardware, wiring and testing each component.</p>
+
+        <div class="project-img-mixed-row">
+          <img src="1-imposter-ai/product-hardware1.jpeg" alt="Product hardware 1" />
+          <img src="1-imposter-ai/product-hardware2.jpeg" alt="Product hardware 2" />
+        </div>
+      </div>
+
+      <div class="project-section project-system-item">
+        <h2>02 &nbsp; AI</h2>
+        <h3>The LLM runs the game, sits at the table, and lies to your face.</h3>
+        <p>The AI serves two roles at once. As host, an LLM manages the game flow, registers players, and moderates each round. As player, it listens to how the other humans respond, understands the rules and context of the current round, reads the lies others tell, and generates a witty lie of its own.</p>
+        <p><span class="text-highlight">The AI runs the game and plays in it, competing by the same rules as everyone else.</span></p>
+        <div class="project-img">
+          <img src="1-imposter-ai/product-ai.jpeg" alt="Product AI" />
+        </div>
+      </div>
+
+      <div class="project-section project-system-item">
+        <h2>03 &nbsp; Form</h2>
+        <h3>The physical form was built around a lotus motif, a traditional Korean symbol used as the centerpiece of a deception game.</h3>
+        <p>In South Korea, Imposter is a popular social drinking game played at gatherings and game nights. The lotus is a traditional motif in Korean decorative culture, historically used in drinking cups and ceremonial design. <span class="text-highlight">The lotus also symbolizes honesty and purity, so using it as the centerpiece of a deception game was a deliberate and playful contradiction.</span></p>
+        <div class="project-img">
+          <img src="1-imposter-ai/product-design.jpeg" alt="Lotus hub and leaf coasters" />
+        </div>
+        <p style="margin-top:32px;">I modified existing lotus flower and leaf assets to fit cases for the hardware components inside. Starting from existing models was the practical call for a hackathon timeline.</p>
+        <div class="project-img">
+          <img src="1-imposter-ai/product-design2.jpeg" alt="3D printer producing the parts" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Challenges / Accomplishments / Learnings — scroll carousel -->
+    <div class="scroll-cards-outer">
+      <div class="scroll-cards-sticky">
+        <div class="scroll-cards-inner">
+        <p class="scroll-cards-section-label">Reflections</p>
+        <div class="scroll-card active" data-index="0">
+          <p class="scroll-card-label">Challenges</p>
+          <ol>
+            <li><span>Wiring and testing every component correctly under a <span class="text-highlight">24-hour deadline</span></span></li>
+            <li><span>Designing a form that could make the game's <span class="text-highlight">social energy feel real and physical</span></span></li>
+            <li><span>3D modeling a sophisticated shape and fitting the hardware inside it</span></li>
+          </ol>
+        </div>
+        <div class="scroll-card" data-index="1">
+          <p class="scroll-card-label">Accomplishments</p>
+          <ol>
+            <li><span>Hardware, AI, and visual design came together as <span class="text-highlight">one cohesive, playable system</span></span></li>
+            <li><span>A physical object that gave the AI a distinct presence before it ever spoke</span></li>
+            <li><span><span class="text-highlight">Strong cross-disciplinary teamwork</span> where each layer built on what the others made possible</span></li>
+          </ol>
+        </div>
+        <div class="scroll-card" data-index="2">
+          <p class="scroll-card-label">Learnings</p>
+          <ol>
+            <li><span>The lotus, the coasters, the lights gave the AI a <span class="text-highlight">physical presence</span> that felt real</span></li>
+            <li><span><span class="text-highlight">Embodiment changes how people engage.</span> It was not a screen. It was a player taking its turn</span></li>
+          </ol>
+        </div>
+        <div class="scroll-card-dots">
+          <span class="scroll-dot active"></span>
+          <span class="scroll-dot"></span>
+          <span class="scroll-dot"></span>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 8: Next Steps -->
+    <div class="project-section">
+      <h2>Next Steps</h2>
+      <h3>From one game to an AI-powered social game platform.</h3>
+      <p>This prototype showed that an AI can hold a social role at the table, run the game, and deceive the players around it. <span class="text-highlight">The next step is expanding to more game formats</span>, from storytelling games to adaptive games that learn each player over time to party games that scale to any size.</p>
+      <p>The deeper goal is not a single product but a platform where AI becomes a recurring character at game night, one that people actually want back at the table.</p>
+    </div>
+
+    <!-- Hackathon photos -->
+    <div class="project-img">
+      <img src="1-imposter-ai/hackathon-photo.JPEG" alt="Hackathon photo" />
+    </div>
+    <div class="project-img-row">
+      <div class="project-img-sm">
+        <img src="1-imposter-ai/hackathon-wip.JPEG" alt="Hackathon WIP" />
+      </div>
+      <div class="project-img-sm">
+        <img src="1-imposter-ai/hackathon-workshop.JPEG" alt="Hackathon workshop" />
+      </div>
+    </div>
+
+  </article>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+    <p class="project-nav-heading">See Also</p>
+    <div class="project-nav-links">
+      <a class="card" href="memory-pot.html">
+        <div class="card-thumb">
+          <img src="0-home-project-thumbnails/memory-pot-thumbnail.JPG" alt="Memory Pot" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Memory pot</h3>
+          <p class="card-meta">Sep – Dec 2025 · Solo</p>
+          <p class="card-desc">A responsive memorial object for people dealing with pet grief that helps them process different emotions changing over time.</p>
+          <div class="card-tags">
+            <span class="tag">Physical Computing</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Arduino</span>
+          </div>
+        </div>
+      </a>
+      <a class="card" href="we-rule-the-world.html">
+        <div class="card-thumb">
+          <img src="0-home-project-thumbnails/wrtw-thumbnail.png" alt="We Rule the World!" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">We rule the world!</h3>
+          <p class="card-meta">Aug – Dec 2023 · Solo</p>
+          <p class="card-desc">A gamified platform for young donors that makes donating fun and accessible to help underfunded animal shelters in South Korea.</p>
+          <div class="card-tags">
+            <span class="tag">UX/UI Design</span>
+            <span class="tag">Interactive Exhibition</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html#works">Works</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+    <span>© 2026 JuJu Kim. All Rights Reserved.</span>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <img src="assets/icon-up-arrow.svg" class="svg-icon" alt="↑" />
+  </button>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

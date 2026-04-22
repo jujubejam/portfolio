@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="About JuJu Kim — interaction designer" />
+  <title>About — JuJu Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-lightmode.png" />
+  <link rel="apple-touch-icon" href="assets/logo-lightmode.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo-lightmode.svg" alt="JuJu Kim" class="nav-logo-img" />
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-track"><span class="toggle-thumb"><svg class="toggle-sun" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="toggle-moon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></span>
+      </button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#works" class="mobile-link">Works</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" class="mobile-link">Resume ↗</a>
+  </div>
+
+  <main>
+    <div class="about-page-inner">
+      <h1 class="about-heading">Hi, I'm JuJu!</h1>
+      <div class="about-layout">
+        <div class="about-portrait">
+          <img src="7-about/portrait_juju.png" alt="JuJu Kim" />
+        </div>
+        <div class="about-content">
+      <div class="about-body">
+        <p>I am a Master's student studying Interaction Design at School of Visual Arts, New York. I design tangible experiences that connect people with people, things, and places.</p>
+
+        <p><button class="about-toggle" data-target="education-panel">My studies in Information·Interaction Design and Cognitive Science pushed me to think deeply about how humans actually perceive and experience the world.</button></p>
+
+        <div class="about-expand-panel" id="education-panel">
+          <div class="about-expand-inner">
+            <div class="about-expand-item">
+              <p class="about-expand-org">School of Visual Arts</p>
+              <p class="about-expand-role">MFA Interaction Design</p>
+              <p class="about-expand-meta">New York, NY · Expected May 2027</p>
+            </div>
+            <div class="about-expand-item">
+              <p class="about-expand-org">Yonsei University</p>
+              <p class="about-expand-role">BS Information and Interaction Design, BIS Cognitive Science</p>
+              <p class="about-expand-meta">Seoul, South Korea · Feb 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <p><button class="about-toggle" data-target="experience-panel">Working across early-stage products and new businesses taught me to look beyond what already exists and ask what comes next.</button></p>
+
+        <div class="about-expand-panel" id="experience-panel">
+          <div class="about-expand-inner">
+            <div class="about-expand-item">
+              <p class="about-expand-org">Serviceplan Group | House of Communication, Innovation Team</p>
+              <p class="about-expand-role">User Research & Design Intern</p>
+              <p class="about-expand-meta">Seoul, South Korea · Jul – Dec 2024</p>
+            </div>
+            <div class="about-expand-item">
+              <p class="about-expand-org">Kearney | Digital Transformation Team</p>
+              <p class="about-expand-role">UX/UI Research Assistant</p>
+              <p class="about-expand-meta">Seoul, South Korea · Jan – Apr 2024</p>
+            </div>
+            <div class="about-expand-item">
+              <p class="about-expand-org">Naver Corp. | N Boost Team</p>
+              <p class="about-expand-role">Service / Product Design Intern</p>
+              <p class="about-expand-meta">Gyeonggi-do, South Korea · Jul – Dec 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <p>I am drawn to that question, and right now I am exploring physical interactions as my way in.</p>
+
+        <p>When offline, I am at Broadway watching musicals or at school painting. I also have a HUGE sweet tooth, so I may be spotted in NYC pastry shops.</p>
+      </div>
+      <div class="about-actions">
+        <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener" class="cta-btn cta-btn-email">Resume ↗</a>
+      </div>
+        </div><!-- /.about-content -->
+      </div><!-- /.about-layout -->
+    </div>
+
+    <!-- CTA -->
+    <section id="cta">
+      <h2 class="cta-heading">
+        <span class="cta-line1">Let's build <div class="gif-inline"><img src="assets/baking.gif" alt="" /></div></span>
+        something together!
+      </h2>
+      <p class="cta-sub">Open to new opportunities and conversations.<br>Feel free to get in touch.</p>
+      <div class="cta-buttons">
+        <button class="cta-btn cta-btn-email" id="copyEmailBtn">
+          <img src="assets/icon-copy.svg" class="svg-icon cta-btn-icon" id="copyIcon" alt="" />
+          <span id="copyLabel">seongjukim@gmail.com</span>
+        </button>
+        <a href="https://www.linkedin.com/in/juju-kim" target="_blank" rel="noopener" class="cta-btn">LinkedIn ↗</a>
+        <a href="https://www.instagram.com/jujukimme/" target="_blank" rel="noopener" class="cta-btn">Instagram ↗</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html#works">Works</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+    <span>© 2026 JuJu Kim. All Rights Reserved.</span>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <img src="assets/icon-up-arrow.svg" class="svg-icon" alt="↑" />
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

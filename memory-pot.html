@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Pot — JuJu Kim</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Caveat:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-lightmode.png" />
+  <link rel="apple-touch-icon" href="assets/logo-lightmode.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo-lightmode.svg" alt="JuJu Kim" class="nav-logo-img" />
+    </a>
+    <div class="nav-right">
+      <ul class="nav-links">
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a></li>
+      </ul>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="toggle-track"><span class="toggle-thumb"><svg class="toggle-sun" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg><svg class="toggle-moon" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg></span></span>
+      </button>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#works" class="mobile-link">Works</a>
+    <a href="about.html" class="mobile-link">About</a>
+    <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" class="mobile-link">Resume ↗</a>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="project-hero">
+    <img src="0-home-project-thumbnails/memory-pot-thumbnail.JPG" alt="Memory Pot" />
+  </div>
+
+  <article class="project-article">
+
+    <h1>Memory Pot</h1>
+    <p class="project-subtitle">A responsive memorial object for people dealing with pet grief that helps them process different emotions changing over time.</p>
+
+    <p class="project-badge">✦ &nbsp;Presented at SVA MFA Interaction Design Open Studios, New York City</p>
+
+    <div class="meta-grid">
+      <div>
+        <p class="meta-col-label">Role</p>
+        <ul class="meta-col-value"><li>· Physical Computing</li><li>· Interaction Design</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Tools</p>
+        <ul class="meta-col-value"><li>· Raspberry Pi 5</li><li>· Arduino</li><li>· p5.js</li><li>· Servo Motors</li></ul>
+      </div>
+      <div>
+        <p class="meta-col-label">Timeline</p>
+        <p class="meta-col-value">Sep – Dec 2025</p>
+      </div>
+      <div>
+        <p class="meta-col-label">Solo</p>
+        <p class="meta-col-value">In memory of Mingki 🐾</p>
+      </div>
+    </div>
+
+    <!-- Memory Pot — hero section -->
+    <div class="mp-showcase-band">
+      <div class="mp-showcase-inner">
+      <div class="mp-showcase">
+        <h3>A plant pot that responds to your emotions through the behavioral language of a dog.</h3>
+        <p><span class="text-highlight">Pet grief comes with a wave of different emotions. Sadness, but also happiness when a good memory surfaces, and then guilt for feeling happy at all.</span> Most people try to suppress one or the other because it feels wrong to feel both.</p>
+        <p>Memory Pot mirrors whatever you are feeling back at you, through the instinctive behavioral language of a dog. <span class="text-highlight">It does not push you toward a different emotion. It simply tells you that whatever you feel is okay.</span></p>
+
+        <div class="mp-hero-row">
+          <div class="mp-hero-img">
+            <img src="2-memory-pot/openstudios-photo2.jpeg" alt="Memory Pot at SVA Open Studios" />
+          </div>
+          <div class="mp-video-main">
+            <div class="project-video-embed"><iframe src="https://player.vimeo.com/video/1182845288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Open Studios - Memory Pot Demo"></iframe></div>
+          </div>
+        </div>
+
+        <div class="behavior-callout">
+          <ul class="behavior-list">
+            <li>Curious/Confused: the head tilts</li>
+            <li>Happy: the tail wags</li>
+            <li>Sad: the ears shake</li>
+          </ul>
+        </div>
+        <p>The pot reads your face and responds with one of these movements. Place it in front of you and let it react to how you actually feel. <button class="about-toggle" data-target="mp-personal-panel">the story behind this</button></p>
+        <div class="about-expand-panel" id="mp-personal-panel">
+          <div class="about-expand-inner">
+            <div class="mingki-photos">
+              <img src="2-memory-pot/mingki.png" alt="Mingki" />
+              <img src="2-memory-pot/mingki2.PNG.png" alt="Mingki" />
+            </div>
+            <p>My family dog passed away a few years ago, and it was really hard. I wanted to do something for the people going through the same thing, the ones quietly carrying pet loss in their everyday lives. Memory Pot started there.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Open Studios -->
+      <div class="mp-showcase">
+        <h3>Exhibited at SVA MFA Open Studios, December 2025.</h3>
+        <p>At the December 2025 Open Studios, I got to watch visitors interact with Memory Pot in person. Some were pet owners who had lost animals recently, or years ago. They stopped, stayed longer than expected, and shared stories I was not prepared for. <span class="text-highlight">Hearing them talk about their grief so openly, in front of something I built, was one of the most inspiring moments of this project.</span></p>
+
+        <div class="mp-photo-row">
+          <img src="2-memory-pot/openstudios-photo.png" alt="Memory Pot at SVA Open Studios" />
+          <img src="2-memory-pot/openstudios-photo3.jpeg" alt="Memory Pot at SVA Open Studios" />
+        </div>
+
+        <div class="project-video-wrap">
+          <div class="project-video-embed"><iframe src="https://player.vimeo.com/video/1184245452?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Memory Pot - Open Studios"></iframe></div>
+          <p class="project-video-caption">See it in action!</p>
+        </div>
+      </div>
+
+      </div>
+    </div>
+
+    <!-- Section 1: The Research -->
+    <div class="project-section">
+      <h2>The Research</h2>
+      <h3>Millions of people go through pet loss every year. And most of them carry it in silence, day after day.</h3>
+      <p>Blue Cross's Pet Loss Support service alone received <span class="text-highlight">30,689 requests for support in 2024</span>, up from 20,381 the year before.</p>
+      <div class="project-stats">
+        <div class="project-stat project-stat--hero">
+          <span class="project-stat-num">30,689</span>
+          <span class="project-stat-label">requests for support in 2024</span>
+          <span class="project-stat-prev">20,381 in 2023</span>
+        </div>
+        <div class="project-stats-secondary">
+          <div class="project-stat project-stat--small">
+            <span class="project-stat-num">15,390</span>
+            <span class="project-stat-label">telephone calls and emails answered</span>
+          </div>
+          <div class="project-stat project-stat--small">
+            <span class="project-stat-num">5,709</span>
+            <span class="project-stat-label">webchat conversations</span>
+          </div>
+          <div class="project-stat project-stat--small">
+            <span class="project-stat-num">9,590</span>
+            <span class="project-stat-label">new Facebook group members</span>
+          </div>
+        </div>
+      </div>
+      <p class="project-stats-caption">Source: Blue Cross, 2024</p>
+      <p>Studies place pet grief on par with the loss of a close family member. <span class="text-highlight">Yet the grief stays private in everyday life, because people fear others will not understand.</span></p>
+      <blockquote class="project-quote">
+        "People's understanding in the past 10 years has grown but <button class="about-toggle" data-target="disenfranchised-panel">disenfranchised grief</button>
+        <div class="about-expand-panel" id="disenfranchised-panel"><div class="about-expand-inner project-quote-def">Grief that is not openly acknowledged or socially supported, because others do not recognise the loss as significant. Coined by psychologist Kenneth Doka in 1989. Pet loss is one of the most common examples.</div></div>
+        where other people don't understand, is still something we see a lot."
+        <cite>— Diane James, Head of Pet Bereavement Support Services, Blue Cross</cite>
+      </blockquote>
+    </div>
+
+    <!-- Section 2: Social Listening -->
+    <div class="project-section">
+      <p class="scroll-card-label">Social Listening</p>
+      <h3>What is the hardest thing in daily grieving?</h3>
+      <p>Animal memorial posts and pet loss communities revealed what people rarely say out loud: <span class="text-highlight">the difficulty of riding out different emotions as they shift, and the guilt that comes when the sadness begins to lift.</span></p>
+      <div class="sl-notes">
+        <div class="sl-note">
+          <p>"<strong>How can I be laughing when he's gone?</strong> Does this mean I'm getting over him?"</p>
+        </div>
+        <div class="sl-note">
+          <p>"My beloved Sashi who was an 11 year old schnauzer-poodle mix, developed cancer and it had spread everywhere. In her last days, she went blind. She was put down 2 days ago. <strong>I have found myself continuously feeling afraid of laughing, or feeling anything other than sad.</strong> It has stopped me from trying to do things that will make me feel better."</p>
+        </div>
+        <div class="sl-note">
+          <p>"My beloved pup passed away this weekend after 12 years. <strong>I can't seem to watch my shows or do anything without feeling guilty about being able to feel happiness after he passed.</strong> It's like I'm watching my favorite show 5 minutes in and I find myself enjoying it but then immediately thinks of my dog and how he'll never get another treat or play with his favorite toys and he's really gone forever and I just can't bring myself enjoy life when he can't anymore."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- HMW -->
+    <div class="project-hmw">
+      <div class="project-hmw-inner">
+        <h3>How might we help pet guardians process the waves of emotion after pet loss?</h3>
+      </div>
+    </div>
+
+    <!-- Section 3: Playtest -->
+    <div class="project-section">
+      <h2>Playtest</h2>
+      <h3>Do people grieving need to be uplifted, or simply met where they are?</h3>
+      <p>The concept was a plant pot that reacts to the person in front of it. Before building anything, I ran a playtest with 6 participants to understand what kind of reaction would feel right during grief. <span class="text-highlight">My assumption going in was that people would generally prefer positive responses, something warm and uplifting to help them feel better.</span></p>
+
+      <div class="playtest-prompt">
+        <p class="playtest-prompt-label">the prompt</p>
+        <p class="playtest-prompt-q">If the potted plant had a face, what expression would you want it to make, and how would it make you feel?</p>
+        <p class="playtest-prompt-toggle-wrap"><button class="about-toggle" data-target="playtest-template-panel">see the worksheet</button></p>
+        <div class="about-expand-panel" id="playtest-template-panel">
+          <div class="about-expand-inner">
+            <img src="2-memory-pot/playtest-template.png" class="playtest-template-expanded" alt="Playtest worksheet template">
+          </div>
+        </div>
+      </div>
+
+      <img src="2-memory-pot/playtest-demo.gif" class="playtest-gif-loop" id="playtestGif" alt="Playtest demo illustration">
+
+      <div class="playtest-carousel">
+        <div class="pt-clip">
+          <div class="pt-track">
+            <img src="2-memory-pot/playtest1.jpeg" alt="Participant 1">
+            <img src="2-memory-pot/playtest2.jpeg" alt="Participant 2">
+            <img src="2-memory-pot/playtest3.jpeg" alt="Participant 3">
+            <img src="2-memory-pot/playtest4.jpeg" alt="Participant 4">
+            <img src="2-memory-pot/playtest5.jpeg" alt="Participant 5">
+            <img src="2-memory-pot/playtest6.jpeg" alt="Participant 6">
+          </div>
+        </div>
+        <div class="playtest-controls">
+          <button class="playtest-btn" id="pt-prev">‹</button>
+          <span class="playtest-counter" id="pt-counter">1 / 6</span>
+          <button class="playtest-btn" id="pt-next">›</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Section 4: The Insight -->
+    <div class="project-section">
+      <h2>The Insight</h2>
+      <h3>The assumption was wrong. What people needed was not relief. It was permission to feel exactly what they already felt, without being rushed through it.</h3>
+
+      <div class="insight-grid">
+        <div class="insight-card">
+          <p class="insight-num">01</p>
+          <p class="insight-headline">Be met in the sadness, not pulled out of it.</p>
+          <p>Participants did not want an object that pushed them toward positivity. <span class="text-highlight">They wanted permission to stay in the sad moment, and a reaction that acknowledged it without rushing them through it.</span> The guilt people feel is not about being sad. It is about being okay.</p>
+          <p class="insight-pull">"It feels good to be sad."</p>
+        </div>
+        <div class="insight-card">
+          <p class="insight-num">02</p>
+          <p class="insight-headline">Be recognised as a person, not given a generic response.</p>
+          <p>When the reaction was a generic digitalized emoji, people felt nothing. <span class="text-highlight">What they wanted was something personal, something that felt like it actually knew them</span>, not a pre-programmed response that could belong to anyone.</p>
+          <p class="insight-pull">"It's hard to resonate with random digital emotions."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Design Decisions -->
+    <div class="project-section">
+      <h2>Design Decisions</h2>
+      <ul class="design-decisions-list">
+        <li>The object mirrors what you feel rather than pushing you toward something else.</li>
+        <li>Instinctive dog movements feel personal and familiar in a way that generic digital expressions do not.</li>
+        <li>A physical memorial shares the same space as the grief, which is what makes the mirroring feel real.</li>
+      </ul>
+    </div>
+
+    <!-- The Build group -->
+    <p class="project-system-label">The Build</p>
+
+    <div class="project-system-group">
+
+      <div class="project-section project-system-item">
+        <h2>01 &nbsp; System</h2>
+        <h3>The entire system runs on a Raspberry Pi 5 hidden inside the pot.</h3>
+        <p>The camera inside the enclosure runs continuously on a Raspberry Pi 5. When it detects a face, the LED switches on to illuminate the viewer and improve the feed. DeepFace then reads the dominant emotion frame by frame. Each reading sends a GPIO signal to the corresponding servo, and the pot responds.</p>
+        <div class="system-flow-diagram">
+          <div class="sfd-row">
+            <div class="sfd-step">
+              <span class="sfd-component">Camera</span>
+              <span class="sfd-action">detects a face</span>
+              <div class="sfd-visual sfd-visual--camera">
+                <div class="sfd-cam-box">
+                  <svg class="sfd-cam-face" viewBox="0 0 36 36" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="18" cy="18" r="13" fill="none" stroke="rgba(255,255,255,0.65)" stroke-width="1.4"/>
+                    <circle cx="13" cy="15" r="1.6" fill="rgba(255,255,255,0.85)"/>
+                    <circle cx="23" cy="15" r="1.6" fill="rgba(255,255,255,0.85)"/>
+                    <path d="M12 23 Q18 19 24 23" stroke="rgba(255,255,255,0.8)" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <span class="sfd-arrow">→</span>
+            <div class="sfd-step">
+              <span class="sfd-component">LED</span>
+              <span class="sfd-action">switches on</span>
+              <div class="sfd-visual sfd-visual--led">
+                <div class="sfd-led-dot"></div>
+              </div>
+            </div>
+            <span class="sfd-arrow">→</span>
+            <div class="sfd-step">
+              <span class="sfd-component">DeepFace</span>
+              <span class="sfd-action">reads dominant emotion</span>
+              <div class="sfd-visual sfd-visual--deepface">
+                <div class="sfd-emo"><span class="sfd-emo-label">sad</span><div class="sfd-emo-bar" style="width:0px"></div><span class="sfd-emo-val">—</span></div>
+                <div class="sfd-emo"><span class="sfd-emo-label">happy</span><div class="sfd-emo-bar" style="width:0px"></div><span class="sfd-emo-val">—</span></div>
+                <div class="sfd-emo"><span class="sfd-emo-label">neutral</span><div class="sfd-emo-bar" style="width:0px"></div><span class="sfd-emo-val">—</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="sfd-row">
+            <div class="sfd-step">
+              <span class="sfd-component">GPIO</span>
+              <span class="sfd-action">routes signal to servo</span>
+              <div class="sfd-visual sfd-visual--gpio">
+                <div class="sfd-pin"><span>pin 17</span><span class="sfd-pin-state">LOW</span></div>
+                <div class="sfd-pin" id="sfd-pin18"><span>pin 18</span><span class="sfd-pin-state">LOW</span></div>
+                <div class="sfd-pin"><span>pin 19</span><span class="sfd-pin-state">LOW</span></div>
+              </div>
+            </div>
+            <span class="sfd-arrow">→</span>
+            <div class="sfd-step">
+              <span class="sfd-component">Pot</span>
+              <span class="sfd-action">responds</span>
+              <div class="sfd-visual sfd-visual--pot">
+                <div class="sfd-servo"><span>tail</span><span>idle</span></div>
+                <div class="sfd-servo active"><span>ears</span><span class="sfd-servo-motion">oscillate</span></div>
+                <div class="sfd-servo"><span>head</span><span>idle</span></div>
+              </div>
+            </div>
+            <div class="sfd-spacer"></div>
+          </div>
+        </div>
+        <div class="build-signal-table">
+          <div class="bst-row bst-header">
+            <span>emotion</span>
+            <span>target</span>
+            <span>movement</span>
+          </div>
+          <div class="bst-row">
+            <span>happiness</span>
+            <span>tail servo</span>
+            <span>repeating full sweep</span>
+          </div>
+          <div class="bst-row">
+            <span>sadness</span>
+            <span>both ear servos</span>
+            <span>bilateral oscillation</span>
+          </div>
+          <div class="bst-row">
+            <span>curiosity/confusion</span>
+            <span>head servo</span>
+            <span>sustained tilt hold</span>
+          </div>
+        </div>
+        <div class="emotion-gif-row">
+          <div class="emotion-gif-item">
+            <img src="2-memory-pot/happy.gif" alt="Happiness response" />
+            <span>happiness</span>
+          </div>
+          <div class="emotion-gif-item">
+            <img src="2-memory-pot/sad.gif" alt="Sadness response" />
+            <span>sadness</span>
+          </div>
+          <div class="emotion-gif-item">
+            <img src="2-memory-pot/curious.gif" alt="Curiosity response" />
+            <span>curiosity/confusion</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-section project-system-item">
+        <h2>02 &nbsp; Form</h2>
+        <h3>Made from white cardboard to stay symbolic rather than literal.</h3>
+        <p>The original plan was synthetic white fur fabric. It was dropped immediately. It looked too much like the pet itself, which closed off the meaning rather than opening it.</p>
+        <div class="enclosure-grid">
+          <img src="2-memory-pot/enclosure1-plant.jpeg" alt="Enclosure plant reference" />
+          <img src="2-memory-pot/enclosure2-paper.jpeg" alt="Enclosure paper sketch" />
+          <img src="2-memory-pot/enclosure3-cardboard.jpeg" alt="Enclosure cardboard prototype" />
+          <img src="2-memory-pot/enclosure4-final.jpeg" alt="Enclosure final" />
+          <img src="2-memory-pot/enclosure5-final.jpeg" alt="Enclosure final" />
+          <img src="2-memory-pot/enclosure6-final.jpeg" alt="Enclosure final" />
+        </div>
+        <p><span class="text-highlight">Cardboard leaves room for the viewer to bring their own meaning to the object.</span> The Raspberry Pi, camera, and wires were all hidden inside the box. The design is also easy to replicate and share, so anyone dealing with grief can build one themselves.</p>
+        <img src="2-memory-pot/enclosure-final-paper.jpeg" alt="Hardware hidden inside the cardboard enclosure" style="width:100%; border-radius:5px; margin-top:8px;" />
+      </div>
+
+    </div>
+
+    <!-- Scroll carousel: Reflections -->
+    <div class="scroll-cards-outer">
+      <div class="scroll-cards-sticky">
+        <div class="scroll-cards-inner">
+          <p class="scroll-cards-section-label">Reflections</p>
+          <div class="scroll-card active" data-index="0">
+            <p class="scroll-card-label">Challenges</p>
+            <ol>
+              <li><span>Detecting emotion accurately enough to feel <span class="text-highlight">responsive, not random</span></span></li>
+              <li><span>Designing for grief without making the object feel <span class="text-highlight">heavy or clinical</span></span></li>
+            </ol>
+          </div>
+          <div class="scroll-card" data-index="1">
+            <p class="scroll-card-label">Accomplishments</p>
+            <ol>
+              <li><span>A self-contained emotional object that <span class="text-highlight">runs without a laptop</span></span></li>
+              <li><span>Emotion detection working live through a hidden camera in the pot</span></li>
+            </ol>
+          </div>
+          <div class="scroll-card" data-index="2">
+            <p class="scroll-card-label">Learnings</p>
+            <ol>
+              <li><span>People were comfortable showing emotions in front of the pot. <span class="text-highlight">Some talked to it and tried to pet it</span> as if it were alive. The physical body likely influenced this, though it needs further research.</span></li>
+              <li><span>Without instructions, features like the green light were unclear. Once explained, people found it intuitive. <span class="text-highlight">There might be a better way to build that understanding into the object itself.</span></span></li>
+            </ol>
+          </div>
+          <div class="scroll-card-dots">
+            <span class="scroll-dot active"></span>
+            <span class="scroll-dot"></span>
+            <span class="scroll-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Steps -->
+    <div class="project-section">
+      <h2>Next Steps</h2>
+      <h3>A few things stood out as worth building toward.</h3>
+      <p>The most immediate problem is calibration. Right now, the model reads emotion from a general baseline that does not account for individual faces. A better version would ask each person to make four expressions when they first approach, using that as a personal reference point. It would also teach people how to interact with the pot without needing a sign next to it.</p>
+      <p><span class="text-highlight">DeepFace performed noticeably less accurately with darker skin tones and East Asian features.</span> This is a known bias in many facial recognition datasets and needs to be addressed before the project could work fairly for a broad audience.</p>
+    </div>
+
+    <p class="project-closing-quote">"It is okay to be sad. It is also okay not to be."</p>
+
+  </article>
+
+  <!-- PROJECT NAV -->
+  <nav class="project-nav">
+    <p class="project-nav-heading">See Also</p>
+    <div class="project-nav-links">
+      <a class="card" href="the-imposter-ai.html">
+        <div class="card-thumb">
+          <img src="0-home-project-thumbnails/imposter-thumbnail.JPEG" alt="The Imposter AI" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">The Imposter AI @MIT hackathon</h3>
+          <p class="card-meta">Mar 2026 · Team</p>
+          <p class="card-desc">An AI-powered tabletop game system where the AI sits at the table as a player, not just a moderator.</p>
+          <div class="card-tags">
+            <span class="tag">Physical Computing</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Hardware X AI</span>
+          </div>
+        </div>
+      </a>
+      <a class="card" href="roomies.html">
+        <div class="card-thumb">
+          <img src="0-home-project-thumbnails/roomies-thumbnail.png" alt="Roomies" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Roomies</h3>
+          <p class="card-meta">Mar – Aug 2021 · Team</p>
+          <p class="card-desc">A P2P app for young adults that turns daily routines into shared challenges to build accountability through human connection.</p>
+          <div class="card-tags">
+            <span class="tag">UX/UI Design</span>
+            <span class="tag">Metaverse</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </nav>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html#works">Works</a>
+      <a href="about.html">About</a>
+      <a href="https://drive.google.com/file/d/1xzUjTOhHr8oZvBGjeSdSVggbpiIiTu8Z/view?usp=sharing" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+    <span>© 2026 JuJu Kim. All Rights Reserved.</span>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <img src="assets/icon-up-arrow.svg" class="svg-icon" alt="↑" />
+  </button>
+
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Stat counter animation
+    const statsGrid = document.querySelector('.project-stats');
+    if (statsGrid) {
+      const statNums = statsGrid.querySelectorAll('.project-stat-num');
+      const targets = Array.from(statNums).map(el => parseInt(el.textContent.replace(/,/g, ''), 10));
+
+      function easeOut(t) { return 1 - Math.pow(1 - t, 3); }
+      function formatNum(n) { return Math.round(n).toLocaleString(); }
+
+      function animateCounters() {
+        const duration = 2400;
+        const start = performance.now();
+        function tick(now) {
+          const p = Math.min((now - start) / duration, 1);
+          const e = easeOut(p);
+          statNums.forEach((el, i) => { el.textContent = formatNum(targets[i] * e); });
+          if (p < 1) requestAnimationFrame(tick);
+          else statNums.forEach((el, i) => { el.textContent = targets[i].toLocaleString(); });
+        }
+        requestAnimationFrame(tick);
+      }
+
+      const statsObs = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) { animateCounters(); statsObs.disconnect(); }
+      }, { threshold: 0.4 });
+      statsObs.observe(statsGrid);
+    }
+
+    // Force GIF loop by resetting src on each cycle
+    (function loopGif() {
+      const gif = document.getElementById('playtestGif');
+      if (!gif) return;
+      const src = gif.src;
+      // Reset every 4s — adjust if the GIF duration differs
+      setInterval(() => { gif.src = ''; gif.src = src; }, 4000);
+    })();
+
+    document.querySelectorAll('.sl-note').forEach(note => {
+      const obs = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          note.classList.add('written');
+          obs.disconnect();
+        }
+      }, { threshold: 0.35 });
+      obs.observe(note);
+    });
+
+    // Playtest peek carousel
+    // Playtest peek carousel — infinite loop
+    const ptClip  = document.querySelector('.pt-clip');
+    const ptTrack = document.querySelector('.pt-track');
+    if (ptTrack) {
+      const realImgs  = [...ptTrack.querySelectorAll('img')];
+      const ptCounter = document.getElementById('pt-counter');
+      const gap = 16;
+      const realCount = realImgs.length;
+
+      // Clone first and last for seamless loop
+      const firstClone = realImgs[0].cloneNode(true);
+      const lastClone  = realImgs[realCount - 1].cloneNode(true);
+      ptTrack.appendChild(firstClone);
+      ptTrack.insertBefore(lastClone, realImgs[0]);
+
+      const allSlides = [...ptTrack.querySelectorAll('img')];
+      let current = 1; // start on first real slide (index 1, after lastClone)
+      let locked = false;
+
+      function peek() { return Math.max(80, Math.round(ptClip.offsetWidth * 0.13)); }
+
+      function ptSetSizes() {
+        const slideW = ptClip.offsetWidth - peek() * 2;
+        allSlides.forEach(img => { img.style.width = slideW + 'px'; });
+      }
+
+      function ptDraw(animate) {
+        ptTrack.style.transition = animate ? 'transform 0.48s cubic-bezier(0.16,1,0.3,1)' : 'none';
+        const slideW = allSlides[0].offsetWidth;
+        const cw = ptClip.offsetWidth;
+        ptTrack.style.transform = `translateX(${cw / 2 - current * (slideW + gap) - slideW / 2}px)`;
+        allSlides.forEach((img, i) => img.classList.toggle('pt-active', i === current));
+        const realIdx = ((current - 1) % realCount + realCount) % realCount;
+        ptCounter.textContent = `${realIdx + 1} / ${realCount}`;
+      }
+
+      function ptJump() {
+        // After animating to a clone, silently jump to the real counterpart
+        if (current === 0) {
+          current = realCount;
+          ptDraw(false);
+        } else if (current === allSlides.length - 1) {
+          current = 1;
+          ptDraw(false);
+        }
+        locked = false;
+      }
+
+      function ptPrev() { if (locked) return; locked = true; current--; ptDraw(true); }
+      function ptNext() { if (locked) return; locked = true; current++; ptDraw(true); }
+
+      ptTrack.addEventListener('transitionend', ptJump);
+      document.getElementById('pt-prev').addEventListener('click', ptPrev);
+      document.getElementById('pt-next').addEventListener('click', ptNext);
+
+      // Drag / swipe
+      let dragStartX = 0, dragging = false;
+      function dragBase() { const sw = allSlides[0].offsetWidth; const cw = ptClip.offsetWidth; return cw / 2 - current * (sw + gap) - sw / 2; }
+      ptClip.addEventListener('mousedown',  e => { if (locked) return; dragStartX = e.clientX; dragging = true; ptTrack.style.transition = 'none'; });
+      ptClip.addEventListener('mousemove',  e => { if (!dragging) return; ptTrack.style.transform = `translateX(${dragBase() + (e.clientX - dragStartX)}px)`; });
+      ptClip.addEventListener('mouseup',    e => { if (!dragging) return; dragging = false; const diff = dragStartX - e.clientX; if (diff > 40) ptNext(); else if (diff < -40) ptPrev(); else { ptTrack.style.transition = ''; ptDraw(true); locked = false; } });
+      ptClip.addEventListener('mouseleave', e => { if (!dragging) return; dragging = false; const diff = dragStartX - e.clientX; if (diff > 40) ptNext(); else if (diff < -40) ptPrev(); else { ptTrack.style.transition = ''; ptDraw(true); locked = false; } });
+      ptClip.addEventListener('touchstart', e => { dragStartX = e.touches[0].clientX; }, { passive: true });
+      ptClip.addEventListener('touchend',   e => { const diff = dragStartX - e.changedTouches[0].clientX; if (diff > 40) ptNext(); else if (diff < -40) ptPrev(); });
+
+      ptSetSizes();
+      ptDraw(false);
+      window.addEventListener('resize', () => { ptSetSizes(); ptDraw(false); });
+    }
+
+    // ── System flow diagram animation ──────────────────────
+    (function() {
+      const diagram = document.querySelector('.system-flow-diagram');
+      if (!diagram) return;
+
+      const steps = Array.from(diagram.querySelectorAll('.sfd-step'));
+      const STEP_MS = 2800;
+      const ALL_DONE_MS = 900;
+      let current = -1;
+      let autoTimer = null;
+      let deepfaceInterval = null;
+
+      const DF_FINAL = [{ w: 54, v: '87%' }, { w: 8, v: '12%' }, { w: 2, v: '1%' }];
+
+      function resetAll() {
+        clearTimeout(autoTimer);
+        if (deepfaceInterval) { clearInterval(deepfaceInterval); deepfaceInterval = null; }
+        steps.forEach(s => s.classList.remove('sfd-active', 'sfd-done', 'sfd-all-done'));
+        diagram.querySelectorAll('.sfd-emo').forEach(row => {
+          row.querySelector('.sfd-emo-bar').style.width = '0px';
+          row.querySelector('.sfd-emo-bar').style.opacity = '1';
+          row.querySelector('.sfd-emo-val').textContent = '—';
+        });
+        const pin18 = document.getElementById('sfd-pin18');
+        if (pin18) { pin18.classList.remove('active'); pin18.querySelector('.sfd-pin-state').textContent = 'LOW'; }
+        const earRow = diagram.querySelector('.sfd-servo.active');
+        if (earRow) earRow.classList.remove('sfd-oscillating');
+        current = -1;
+      }
+
+      function animateDeepFace(onDone) {
+        if (deepfaceInterval) { clearInterval(deepfaceInterval); deepfaceInterval = null; }
+        const emoBars = diagram.querySelectorAll('.sfd-emo');
+        const tgt = [87, 12, 1];
+        let v = [33, 33, 34]; // start roughly equal
+        let count = 0;
+        const TOTAL = 24;
+        deepfaceInterval = setInterval(() => {
+          if (count >= TOTAL) {
+            clearInterval(deepfaceInterval); deepfaceInterval = null;
+            emoBars.forEach((row, i) => {
+              row.querySelector('.sfd-emo-bar').style.width = DF_FINAL[i].w + 'px';
+              row.querySelector('.sfd-emo-bar').style.opacity = '1';
+              row.querySelector('.sfd-emo-val').textContent = DF_FINAL[i].v;
+            });
+            if (onDone) onDone();
+            return;
+          }
+          // Lerp toward target with noise that fades as we approach the end
+          const noise = Math.max(0, 1 - count / (TOTAL * 0.7)) * 10;
+          v = v.map((val, i) => val + (tgt[i] - val) * 0.18 + (Math.random() - 0.5) * noise);
+          v = v.map(val => Math.max(0.5, val));
+          const sum = v.reduce((a, b) => a + b, 0);
+          const pct = v.map(val => Math.round(val / sum * 100));
+          pct[0] += 100 - pct.reduce((a, b) => a + b, 0); // fix rounding
+          pct.forEach((p, i) => {
+            emoBars[i].querySelector('.sfd-emo-bar').style.width = (p * 0.62) + 'px';
+            emoBars[i].querySelector('.sfd-emo-bar').style.opacity = '0.85';
+            emoBars[i].querySelector('.sfd-emo-val').textContent = p + '%';
+          });
+          count++;
+        }, 220);
+      }
+
+      function goTo(index) {
+        if (current >= 0) {
+          steps[current].classList.remove('sfd-active');
+          steps[current].classList.add('sfd-done');
+        }
+        current = index;
+        steps[index].classList.add('sfd-active');
+
+        if (index === 3) {
+          setTimeout(() => {
+            const pin18 = document.getElementById('sfd-pin18');
+            if (pin18) { pin18.classList.add('active'); pin18.querySelector('.sfd-pin-state').textContent = 'HIGH'; }
+          }, 700);
+        }
+
+        if (index === 4) {
+          setTimeout(() => {
+            const earRow = diagram.querySelector('.sfd-servo.active');
+            if (earRow) earRow.classList.add('sfd-oscillating');
+          }, 400);
+        }
+      }
+
+      function advance() {
+        if (current === steps.length - 1) {
+          steps[current].classList.remove('sfd-active');
+          steps[current].classList.add('sfd-done');
+          steps.forEach(s => { s.classList.remove('sfd-done'); s.classList.add('sfd-all-done'); });
+          autoTimer = setTimeout(() => {
+            resetAll();
+            setTimeout(() => { goTo(0); autoTimer = setTimeout(advance, STEP_MS); }, 200);
+          }, ALL_DONE_MS);
+        } else {
+          const next = current + 1;
+          goTo(next);
+          if (next === 2) {
+            // Wait for DeepFace to finish, then pause 600ms before moving on
+            animateDeepFace(() => { autoTimer = setTimeout(advance, 600); });
+          } else {
+            autoTimer = setTimeout(advance, STEP_MS);
+          }
+        }
+      }
+
+      steps.forEach((step, i) => {
+        step.addEventListener('click', () => {
+          resetAll();
+          goTo(i);
+          autoTimer = setTimeout(advance, STEP_MS);
+        });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        if (entries[0].isIntersecting) {
+          observer.disconnect();
+          setTimeout(() => { goTo(0); autoTimer = setTimeout(advance, STEP_MS); }, 300);
+        }
+      }, { threshold: 0.4 });
+      observer.observe(diagram);
+    })();
+  </script>
+</body>
+</html>
